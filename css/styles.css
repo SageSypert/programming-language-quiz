@@ -10,12 +10,15 @@ h2 {
 
 #ruby {
   display: none;
+  text-align: center;
 }
 
 #javascript {
   display: none;
+  text-align: center;
 }
 
 #csharp {
   display: none;
+  text-align: center;
 }
