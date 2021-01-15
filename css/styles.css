@@ -8,6 +8,14 @@ h2 {
   padding-bottom: 50px;
 }
 
+.btn {
+  margin-top: 20px;
+}
+
+.bold {
+  font-weight:bold;
+}
+
 #ruby {
   display: none;
   text-align: center;

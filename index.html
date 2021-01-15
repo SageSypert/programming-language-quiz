@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -7,12 +8,14 @@
   <script src="js/scripts.js"></script>
   <title>Programming Language Selector</title>
 </head>
+
 <body>
-  
+
   <div class="container">
     <h1>Which Programming Language Should You Learn?</h1>
     <h2>To find out which programming language is best suited for you, answer the following questions:</h2>
-    <p>Do you have any experience with programming?</p>
+    <p class="bold">Do you have any experience with programming?</p>
+    
     <form id="programming-quiz">
       <div class="radio">
         <label>
@@ -26,7 +29,7 @@
           No
         </label>
       </div>
-    <p>Which kind of company would you rather work for?</p>
+      <p class="bold">Which kind of company would you rather work for?</p>
       <div class="radio">
         <label>
           <input type="radio" name="company" value="corporate">
@@ -39,7 +42,7 @@
           Startup
         </label>
       </div>
-    <p>iPhone or Android?</p>
+      <p class="bold">iPhone or Android?</p>
       <div class="radio">
         <label>
           <input type="radio" name="phone" value="iphone">
@@ -52,7 +55,7 @@
           Android
         </label>
       </div>
-    <p>Which subject did you enjoy more in school?</p>
+      <p class="bold">Which subject did you enjoy more in school?</p>
       <div class="radio">
         <label>
           <input type="radio" name="subject" value="english">
@@ -65,46 +68,49 @@
           Math
         </label>
       </div>
-    <p>Formal Thursday or Casual Friday?</p>
-      <div class="radio"
+      <p class="bold">Formal Thursday or Casual Friday?</p>
+      <div class="radio">
         <label>
           <input type="radio" name="attire" value="thursday">
           Formal Thursday
         </label>
       </div>
-      <div class="radio"
+      <div class="radio">
         <label>
           <input type="radio" name="attire" value="friday">
           Casual Friday
         </label>
-      </div>
-
-    <button type="button" class="btn btn-primary btn-lg" id="submit">Submit</button>
-    <button type="button" class="btn btn-primary btn-lg" id="reset-button">Reset Quiz</button>
+      </div> 
     </form>
 
-    <div id="ruby">
-      <h3>You should learn Ruby!</h3>
-      <img src=img/ruby.png>
-      <p>Ruby is not only fun to work with, it is fun to learn. It is a great choice for beginners and you can quickly build your project with less complex lines of code. Ruby is easy to get started with, flexible, and readable. You will find a lot of startups using Ruby and many of them use macs as their development machine so if you are more of a mac person, this may be the best bet for you! </p>
-    </div>
-
-    <div id="javascript">
-      <h3>You should learn Javascript!</h3>
-      <img src=img/python.jpg>
-      <p>Javascript is the most popular programming language but also one of the more complex languages to learn! It is great for those that have a more math-oriented brain and enjoy complex problems and formulas. If you are going into data science, this is the language for you!</p>
-    </div>
-
-    <div id="csharp">
-      <h3>You should learn C#!</h3>
-      <img src=img/csharp.png>
-      <p>C# is an incredibly versatile programming language and is the best for building Windows client applications. You will find that many programmer jobs in corporate settings are looking for candidates with C# skills. If you enjoy windows programs and a more corporate setting while remaining versatile, C# is definitely for you!</p>
-    </div>
-
-
-
-  
+      <button type="submit" class="btn btn-dark btn-" id="submit">Submit</button>
   </div>
-  
+
+  <div id="ruby">
+    <h3>You should learn Ruby!</h3>
+    <img src=img/ruby.png>
+    <p>Ruby is not only fun to work with, it is fun to learn. It is a great choice for beginners and you can quickly
+      build your project with less complex lines of code. Ruby is easy to get started with, flexible, and readable.
+      You will find a lot of startups using Ruby and many of them use macs as their development machine so if you are
+      more of a mac person, this may be the best bet for you! </p>
+  </div>
+
+  <div id="javascript">
+    <h3>You should learn Javascript!</h3>
+    <img src=img/python.jpg>
+    <p>Javascript is the most popular programming language but also one of the more complex languages to learn! It is
+      great for those that have a more math-oriented brain and enjoy complex problems and formulas. If you are going
+      into data science, this is the language for you!</p>
+  </div>
+
+  <div id="csharp">
+    <h3>You should learn C#!</h3>
+    <img src=img/csharp.png>
+    <p>C# is an incredibly versatile programming language and is the best for building Windows client applications.
+      You will find that many programmer jobs in corporate settings are looking for candidates with C# skills. If you
+      enjoy windows programs and a more corporate setting while remaining versatile, C# is definitely for you!</p>
+  </div>
+  </div>
 </body>
+
 </html>

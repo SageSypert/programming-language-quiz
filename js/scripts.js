@@ -1,11 +1,11 @@
 $(document).ready(function() {
   $("form#programming-quiz").submit(function(event) {
     
-    let experience = $("input[name='experience']:checked").val();
-    let company = $("input[name='company']:checked").val();
-    let phone = $("input[name='phone']:checked").val();
-    let subject = $("input[name='subject']:checked").val();
-    let attire = $("input[name='attire']:checked").val();
+    const experience = $("input[name='experience']:checked").val();
+    const company = $("input[name='company']:checked").val();
+    const phone = $("input[name='phone']:checked").val();
+    const subject = $("input[name='subject']:checked").val();
+    const attire = $("input[name='attire']:checked").val();
 
     if (experience === 'yes' && company === 'corporate' && phone === 'android' && subject === 'math' && attire === 'thursday') {
       $("#csharp").show();
@@ -15,7 +15,7 @@ $(document).ready(function() {
       $("javascript").show();
     }
 
-    
+
     event.preventDefault();
   });
 });
