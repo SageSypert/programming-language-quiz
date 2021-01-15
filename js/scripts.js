@@ -1,5 +1,6 @@
 $(document).ready(function() {
   $("form#programming-quiz").submit(function(event) {
-    submit.addEventListener('click', showResults);
+    let submitButton = document.getElementById()
+  event.preventDefault();
   }
 }
