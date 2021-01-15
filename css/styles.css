@@ -8,3 +8,14 @@ h2 {
   padding-bottom: 50px;
 }
 
+#ruby {
+  display: none;
+}
+
+#javascript {
+  display: none;
+}
+
+#csharp {
+  display: none;
+}
