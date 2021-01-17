@@ -1,6 +1,5 @@
 $(document).ready(function() {
   $("form#programmingquiz").submit(function(event) {
-
     const experience = $("input:radio[name=experience]:checked").val();
     const company = $("input:radio[name=company]:checked").val();
     const phone = $("input:radio[name=phone]:checked").val();
@@ -34,9 +33,9 @@ $(document).ready(function() {
     if (subject === "english") {
       $("#ruby").show();
     } else if (subject === "math") {
-      $("#javascript").show();
-    } else {
       $("#csharp").show();
+    } else {
+      $("#javascript").show();
     }
 
     if (attire === "thursday") {
