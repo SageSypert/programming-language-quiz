@@ -33,17 +33,17 @@ h2 {
 #ruby {
   display: none;
   text-align: center;
-  margin-top: 50px;
+  margin: 25px 25px 25px 25px;
 }
 
 #javascript {
   display: none;
   text-align: center;
-  margin-top: 50px;
+  margin: 25px 25px 25px 25px;
 }
 
 #csharp {
   display: none;
   text-align: center;
-  margin-top: 50px;
+  margin: 25px 25px 25px 25px;
 }
