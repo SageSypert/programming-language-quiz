@@ -7,31 +7,31 @@ $(document).ready(function() {
     const subject = $("input:radio[name=subject]:checked").val();
     const attire = $("input:radio[name=attire]:checked").val();
 
-    if (experience == "yes") {
+    if (experience === "yes") {
       $("#csharp").show();
-    } else if (experience == "no") {
+    } else if (experience === "no") {
       $("#ruby").show();
     } else {
       $("#javascript").show();
     }
 
-    if (company == "corporate") {
+    if (company === "corporate") {
       $("#csharp").show();
-    } else if (company == "startup") {
+    } else if (company === "startup") {
       $("#ruby").show();
     } else {
       $("#javascript").show();
     }
 
-    if (phone == "iphone") {
+    if (phone === "iphone") {
       $("#ruby").show();
-    } else if (phone == "android") {
+    } else if (phone === "android") {
       $("#csharp").show();
     } else {
       $("#javascript").show();
     }
 
-    if (subject == "english") {
+    if (subject === "english") {
       $("#ruby").show();
     } else if (subject === "math") {
       $("#javascript").show();
@@ -39,7 +39,7 @@ $(document).ready(function() {
       $("#csharp").show();
     }
 
-    if (attire == "thursday") {
+    if (attire === "thursday") {
       $("#csharp").show();
     } else if (attire === "friday") {
       $("#ruby").show();
