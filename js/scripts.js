@@ -7,12 +7,44 @@ $(document).ready(function() {
     const subject = $("input[name='subject']:checked").val();
     const attire = $("input[name='attire']:checked").val();
 
-    if (experience === 'yes' && company === 'corporate' && phone === 'android' && subject === 'math' && attire === 'thursday') {
+    if (experience === "yes") {
       $("#csharp").show();
-    } else if (experience === 'no' && company === 'startup' && phone === 'iphone' && subject === 'english' && attire === 'friday') {
+    } else if (experience === "no") {
       $("#ruby").show();
-    } else if (experience === 'yes' && company === 'corporate' && phone === 'iphone' && subject === 'math' && attire === 'friday') {
-      $("javascript").show();
+    } else {
+      $("#javascript").show();
+    }
+
+    if (company === "corporate") {
+      $("#csharp").show();
+    } else if (company === "startup") {
+      $("#ruby").show();
+    } else {
+      $("#javascript").show();
+    }
+
+    if (phone === "iphone") {
+      $("#ruby").show();
+    } else if (phone === "android") {
+      $("#csharp").show();
+    } else {
+      $("#javascript").show();
+    }
+
+    if (subject === "english") {
+      $("#ruby").show();
+    } else if (subject === "math") {
+      $("#javascript").show();
+    } else {
+      $("#csharp").show();
+    }
+
+    if (attire === "thursday") {
+      $("#csharp").show();
+    } else if (attire === "friday") {
+      $("#ruby").show();
+    } else {
+      $("#javascript").show();
     }
 
     event.preventDefault();
