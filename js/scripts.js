@@ -12,7 +12,7 @@ $(document).ready(function() {
     } else if (experience === "no") {
       $("#ruby").show();
     } else {
-      $("#javascript").hide();
+      $("#javascript").show();
     }
 
     if (company === "corporate") {
@@ -20,7 +20,7 @@ $(document).ready(function() {
     } else if (company === "startup") {
       $("#ruby").show();
     } else {
-      $("#javascript").hide();
+      $("#javascript").show();
     }
 
     if (phone === "iphone") {
@@ -40,7 +40,7 @@ $(document).ready(function() {
     }
 
     if (attire === "thursday") {
-      $("#csharp").hide();
+      $("#csharp").show();
     } else if (attire === "friday") {
       $("#ruby").show();
     } else {
@@ -52,6 +52,5 @@ $(document).ready(function() {
     $("#reset").click(function(){
       document.location.reload(true);
     });
-
   });
 });
