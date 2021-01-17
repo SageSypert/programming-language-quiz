@@ -9,6 +9,19 @@ h2 {
   padding-bottom: 50px;
 }
 
+.card {
+  align-content: center;
+  margin-bottom: 300px;
+  border-width: 15px;
+  width:fit-content;
+}
+
+.card-header {
+  margin-bottom: 20px;
+  width: 50%;
+  
+}
+
 .btn {
   margin-top: 20px;
 }
@@ -20,14 +33,17 @@ h2 {
 #ruby {
   display: none;
   text-align: center;
+  margin-top: 50px;
 }
 
 #javascript {
   display: none;
   text-align: center;
+  margin-top: 50px;
 }
 
 #csharp {
   display: none;
   text-align: center;
+  margin-top: 50px;
 }
