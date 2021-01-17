@@ -16,17 +16,17 @@ h2 {
   font-weight:bold;
 }
 
-#ruby {
+.ruby {
   display: none;
   text-align: center;
 }
 
-#javascript {
+.javascript {
   display: none;
   text-align: center;
 }
 
-#csharp {
+.csharp {
   display: none;
   text-align: center;
 }

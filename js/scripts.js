@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("form#programming-quiz").submit(function(event) {
+  $("form#programmingquiz").submit(function(event) {
 
     const experience = $("input:radio[name=experience]:checked").val();
     const company = $("input:radio[name=company]:checked").val();
@@ -7,37 +7,31 @@ $(document).ready(function() {
     const subject = $("input:radio[name=subject]:checked").val();
     const attire = $("input:radio[name=attire]:checked").val();
 
-    if (experience === "yes") {
+    if (experience == "yes") {
       $("#csharp").show();
-      document.getElementById("csharp").style.display = "none";
-    } else if (experience === "no") {
+    } else if (experience == "no") {
       $("#ruby").show();
-      document.getElementById("ruby").style.display = "none";
     } else {
       $("#javascript").show();
-      document.getElementById("javascript").style.display = "none";
     }
 
-    if (company === "corporate") {
+    if (company == "corporate") {
       $("#csharp").show();
-      document.getElementById("csharp").style.display = "none";
-    } else if (company === "startup") {
+    } else if (company == "startup") {
       $("#ruby").show();
-      document.getElementById("ruby").style.display = "none";
     } else {
-      $("#javascript").show()
-      document.getElementById("javascript").style.display = "none";
+      $("#javascript").show();
     }
 
-    if (phone === "iphone") {
+    if (phone == "iphone") {
       $("#ruby").show();
-    } else if (phone === "android") {
+    } else if (phone == "android") {
       $("#csharp").show();
     } else {
       $("#javascript").show();
     }
 
-    if (subject === "english") {
+    if (subject == "english") {
       $("#ruby").show();
     } else if (subject === "math") {
       $("#javascript").show();
@@ -45,7 +39,7 @@ $(document).ready(function() {
       $("#csharp").show();
     }
 
-    if (attire === "thursday") {
+    if (attire == "thursday") {
       $("#csharp").show();
     } else if (attire === "friday") {
       $("#ruby").show();
