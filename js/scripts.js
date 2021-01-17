@@ -1,5 +1,6 @@
 $(document).ready(function() {
   $("form#programmingquiz").submit(function(event) {
+    
     const experience = $("input:radio[name=experience]:checked").val();
     const company = $("input:radio[name=company]:checked").val();
     const phone = $("input:radio[name=phone]:checked").val();
@@ -11,7 +12,7 @@ $(document).ready(function() {
     } else if (experience === "no") {
       $("#ruby").show();
     } else {
-      $("#javascript").show();
+      $("#javascript").hide();
     }
 
     if (company === "corporate") {
@@ -19,7 +20,7 @@ $(document).ready(function() {
     } else if (company === "startup") {
       $("#ruby").show();
     } else {
-      $("#javascript").show();
+      $("#javascript").hide();
     }
 
     if (phone === "iphone") {
@@ -39,7 +40,7 @@ $(document).ready(function() {
     }
 
     if (attire === "thursday") {
-      $("#csharp").show();
+      $("#csharp").hide();
     } else if (attire === "friday") {
       $("#ruby").show();
     } else {
@@ -47,5 +48,10 @@ $(document).ready(function() {
     }
 
     event.preventDefault();
+
+    $("#reset").click(function(){
+      document.location.reload(true);
+    });
+
   });
 });

@@ -33,17 +33,29 @@ h2 {
 #ruby {
   display: none;
   text-align: center;
+<<<<<<< HEAD
   margin-top: 50px;
+=======
+  margin: 25px 25px 25px 25px;
+>>>>>>> gh-pages
 }
 
 #javascript {
   display: none;
   text-align: center;
+<<<<<<< HEAD
   margin-top: 50px;
+=======
+  margin: 25px 25px 25px 25px;
+>>>>>>> gh-pages
 }
 
 #csharp {
   display: none;
   text-align: center;
+<<<<<<< HEAD
   margin-top: 50px;
+=======
+  margin: 25px 25px 25px 25px;
+>>>>>>> gh-pages
 }
