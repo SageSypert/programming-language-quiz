@@ -1,11 +1,11 @@
 $(document).ready(function() {
-  $("form#programming-quiz").submit(function(event) {
-    
-    const experience = $("input[name='experience']:checked").val();
-    const company = $("input[name='company']:checked").val();
-    const phone = $("input[name='phone']:checked").val();
-    const subject = $("input[name='subject']:checked").val();
-    const attire = $("input[name='attire']:checked").val();
+  $("form#programmingquiz").submit(function(event) {
+
+    const experience = $("input:radio[name=experience]:checked").val();
+    const company = $("input:radio[name=company]:checked").val();
+    const phone = $("input:radio[name=phone]:checked").val();
+    const subject = $("input:radio[name=subject]:checked").val();
+    const attire = $("input:radio[name=attire]:checked").val();
 
     if (experience === "yes") {
       $("#csharp").show();
