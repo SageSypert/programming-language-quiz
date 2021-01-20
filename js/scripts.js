@@ -3,7 +3,6 @@ $("form#programmingquiz").submit(function(event) {
   $("#javascript").hide();
   $("#csharp").hide();
   $("#ruby").hide();
-  $("#no").hide();
 
   event.preventDefault();
   
@@ -26,38 +25,6 @@ $("form#programmingquiz").submit(function(event) {
   } else if (experience + company + phone + subject + attire === 5) {
     $("#ruby").show();
   }
-
-  // if (company === "corporate") {
-  //   $("#csharp").show();
-  // } else if (company === "startup") {
-  //   $("#ruby").show();
-  // } else if (company === "mine") {
-  //   $("#javascript").show();
-  // }
-
-  // if (phone === "iphone") {
-  //   $("#ruby").show();
-  // } else if (phone === "android") {
-  //   $("#csharp").show();
-  // } else if (phone === "neither") {
-  //   $("#javascript").show();
-  // }
-
-  // if (subject === "english") {
-  //   $("#ruby").show();
-  // } else if (subject === "math") {
-  //   $("#csharp").show();
-  // } else if (subject === "science") {
-  //   $("#javascript").show();
-  // }
-
-  // if (attire === "thursday") {
-  //   $("#csharp").show();
-  // } else if (attire === "friday") {
-  //   $("#ruby").show();
-  // } else  if (attire === "everyday") {
-  //   $("#javascript").show();
-  // }
 
     $("#reset").click(function(){
     document.location.reload(true);
