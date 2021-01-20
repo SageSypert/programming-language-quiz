@@ -11,7 +11,7 @@ $(document).ready(function() {
       $("#csharp").show();
     } else if (experience === "no") {
       $("#ruby").show();
-    } else {
+    } else if (experience === "some") {
       $("#javascript").show();
     }
 
@@ -19,7 +19,7 @@ $(document).ready(function() {
       $("#csharp").show();
     } else if (company === "startup") {
       $("#ruby").show();
-    } else {
+    } else if (company === "mine") {
       $("#javascript").show();
     }
 
@@ -27,7 +27,7 @@ $(document).ready(function() {
       $("#ruby").show();
     } else if (phone === "android") {
       $("#csharp").show();
-    } else {
+    } else if (phone === "neither") {
       $("#javascript").show();
     }
 
@@ -35,7 +35,7 @@ $(document).ready(function() {
       $("#ruby").show();
     } else if (subject === "math") {
       $("#csharp").show();
-    } else {
+    } else if (subject === "science") {
       $("#javascript").show();
     }
 
@@ -43,7 +43,7 @@ $(document).ready(function() {
       $("#csharp").show();
     } else if (attire === "friday") {
       $("#ruby").show();
-    } else {
+    } else  if (attire === "everyday") {
       $("#javascript").show();
     }
 
