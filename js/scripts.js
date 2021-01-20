@@ -1,57 +1,33 @@
 $(document).ready(function() {
   $("form#programmingquiz").submit(function(event) {
-    
-    const experience = $("input:radio[name=experience]:checked").val();
-    const company = $("input:radio[name=company]:checked").val();
-    const phone = $("input:radio[name=phone]:checked").val();
-    const subject = $("input:radio[name=subject]:checked").val();
-    const attire = $("input:radio[name=attire]:checked").val();
-
-    if (experience === "yes") {
-      $("#csharp").show();
-    } else if (experience === "no") {
-      $("#ruby").show();
-    } else {
-      $("#javascript").hide();
-    }
-
-    if (company === "corporate") {
-      $("#csharp").show();
-    } else if (company === "startup") {
-      $("#ruby").show();
-    } else {
-      $("#javascript").hide();
-    }
-
-    if (phone === "iphone") {
-      $("#ruby").show();
-    } else if (phone === "android") {
-      $("#csharp").show();
-    } else {
-      $("#javascript").show();
-    }
-
-    if (subject === "english") {
-      $("#ruby").show();
-    } else if (subject === "math") {
-      $("#csharp").show();
-    } else {
-      $("#javascript").show();
-    }
-
-    if (attire === "thursday") {
-      $("#csharp").hide();
-    } else if (attire === "friday") {
-      $("#ruby").show();
-    } else {
-      $("#javascript").show();
-    }
-
+    $("#javascript").hide();
+    $("#csharp").hide();
+    $("#ruby").hide();
+  
     event.preventDefault();
-
-    $("#reset").click(function(){
+    
+    const experience = parseInt($("input:radio[name=experience]:checked").val());
+    const company = parseInt($("input:radio[name=company]:checked").val());
+    const phone = parseInt($("input:radio[name=phone]:checked").val());
+    const subject = parseInt($("input:radio[name=subject]:checked").val());
+    const attire = parseInt($("input:radio[name=attire]:checked").val());
+  
+    if (experience + company + phone + subject + attire === 10) {
+      $("#csharp").show();
+    } else if (experience + company + phone + subject + attire === 9) {
+      $("#javascript").show();
+    } else if (experience + company + phone + subject + attire === 8) {
+      $("#javascript").show();
+    } else if (experience + company + phone + subject + attire === 7) {
+      $("#ruby").show();
+    } else if (experience + company + phone + subject + attire === 6) {
+      $("#ruby").show();
+    } else if (experience + company + phone + subject + attire === 5) {
+      $("#ruby").show();
+    }
+  
+      $("#reset").click(function(){
       document.location.reload(true);
+      });
     });
-
   });
-});
