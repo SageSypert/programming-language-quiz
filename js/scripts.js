@@ -24,9 +24,11 @@ $(document).ready(function() {
       $("#ruby").show();
     } else if (experience + company + phone + subject + attire === 5) {
       $("#ruby").show();
+    } else {
+      alert("Please try again");
     }
-  
-      $("#reset").click(function(){
+      
+    $("#reset").click(function(){
       document.location.reload(true);
       });
     });
